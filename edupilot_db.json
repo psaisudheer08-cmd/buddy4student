@@ -1,0 +1,219 @@
+{
+  "users": [
+    {
+      "id": "student-demo-001",
+      "email": "student@edupilot.ai",
+      "passwordHash": "ae335a11b9ace1d3a9db6614276f477b3ead2be8dfafe3d6e2ff24c5474e55a9",
+      "isVerified": true,
+      "createdAt": "2026-09-28T08:06:24.236Z"
+    },
+    {
+      "id": "student-2d7737d8",
+      "email": "maya.lin@berkeley.edu",
+      "passwordHash": "ae335a11b9ace1d3a9db6614276f477b3ead2be8dfafe3d6e2ff24c5474e55a9",
+      "isVerified": true,
+      "createdAt": "2026-09-28T08:06:33.749Z"
+    },
+    {
+      "id": "student-39fff77b",
+      "email": "p.saisudheer08@gmail.com",
+      "passwordHash": "18f2a39023f0d2232f0f3141af2e41e607c9c2cf9395637b77a0524c507cee1f",
+      "isVerified": true,
+      "createdAt": "2026-09-28T08:11:28.972Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "prof-demo-001",
+      "userId": "student-demo-001",
+      "fullName": "Alex Morgan Updated",
+      "preferredName": "Alex",
+      "university": "Stanford University",
+      "institution": "Stanford University",
+      "degree": "Bachelor of Science",
+      "branch": "Computer Science",
+      "major": "Computer Science",
+      "academicYear": "Year 3",
+      "semester": "Semester 5",
+      "graduationYear": 2026,
+      "targetCareer": "Senior Staff AI Engineer",
+      "preferredLanguage": "English",
+      "preferredStudyHours": "4",
+      "bio": "Passionate CS student exploring AI, distributed systems, and product engineering.",
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:16:49.385Z"
+    },
+    {
+      "id": "prof-68bb961f",
+      "userId": "student-2d7737d8",
+      "fullName": "Maya Lin",
+      "preferredName": "Maya",
+      "university": "",
+      "degree": "Bachelor of Science",
+      "major": "Computer Science",
+      "academicYear": "Year 1",
+      "semester": "Semester 1",
+      "graduationYear": 2027,
+      "targetCareer": "Software Engineer",
+      "preferredLanguage": "English",
+      "preferredStudyHours": "3",
+      "bio": "",
+      "createdAt": "2026-09-28T08:06:33.750Z",
+      "updatedAt": "2026-09-28T08:06:33.750Z"
+    },
+    {
+      "id": "prof-12991288",
+      "userId": "student-39fff77b",
+      "fullName": "Sai Sudheer",
+      "preferredName": "SAI",
+      "university": "",
+      "degree": "Bachelor of Science",
+      "major": "Computer Science",
+      "academicYear": "Year 1",
+      "semester": "Semester 1",
+      "graduationYear": 2027,
+      "targetCareer": "AI Solutions Architect",
+      "preferredLanguage": "English",
+      "preferredStudyHours": "3",
+      "bio": "",
+      "createdAt": "2026-09-28T08:11:28.972Z",
+      "updatedAt": "2026-09-28T08:16:54.186Z"
+    }
+  ],
+  "preferences": [
+    {
+      "id": "pref-demo-001",
+      "userId": "student-demo-001",
+      "defaultAIMode": "tutor",
+      "notificationsEnabled": true,
+      "dailyStudyGoalMinutes": 90,
+      "theme": "light"
+    },
+    {
+      "id": "pref-0b108fc3",
+      "userId": "student-2d7737d8",
+      "defaultAIMode": "tutor",
+      "notificationsEnabled": true,
+      "dailyStudyGoalMinutes": 60,
+      "theme": "light"
+    },
+    {
+      "id": "pref-0b832b6d",
+      "userId": "student-39fff77b",
+      "defaultAIMode": "tutor",
+      "notificationsEnabled": true,
+      "dailyStudyGoalMinutes": 60,
+      "theme": "light"
+    }
+  ],
+  "aiMemories": [],
+  "conversations": [],
+  "messages": [],
+  "studyPlans": [],
+  "goals": [
+    {
+      "id": "goal-demo-1",
+      "userId": "student-demo-001",
+      "title": "Master System Design & Distributed Systems",
+      "description": "Complete core distributed systems foundations, consensus protocols, and scalable services.",
+      "category": "academic",
+      "priority": "high",
+      "progressPercentage": 65,
+      "status": "active",
+      "tasks": [
+        {
+          "id": "gt-1",
+          "goalId": "goal-demo-1",
+          "userId": "student-demo-001",
+          "taskText": "Complete Distributed Systems Course",
+          "isCompleted": true,
+          "orderIndex": 0
+        },
+        {
+          "id": "gt-2",
+          "goalId": "goal-demo-1",
+          "userId": "student-demo-001",
+          "taskText": "Design a high-throughput message queue",
+          "isCompleted": true,
+          "orderIndex": 1
+        },
+        {
+          "id": "gt-3",
+          "goalId": "goal-demo-1",
+          "userId": "student-demo-001",
+          "taskText": "Read Dynamo & Raft consensus papers",
+          "isCompleted": false,
+          "orderIndex": 2
+        }
+      ],
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:06:24.236Z"
+    }
+  ],
+  "notes": [],
+  "documents": [],
+  "quizzes": [],
+  "quizAttempts": [],
+  "skills": [
+    {
+      "id": "skill-1",
+      "userId": "student-demo-001",
+      "skillName": "TypeScript & React",
+      "level": "advanced",
+      "category": "Technical",
+      "isStarred": true,
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:06:24.236Z"
+    },
+    {
+      "id": "skill-2",
+      "userId": "student-demo-001",
+      "skillName": "Python & AI Engineering",
+      "level": "intermediate",
+      "category": "Technical",
+      "isStarred": true,
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:06:24.236Z"
+    },
+    {
+      "id": "skill-3",
+      "userId": "student-demo-001",
+      "skillName": "System Architecture",
+      "level": "intermediate",
+      "category": "Technical",
+      "isStarred": false,
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:06:24.236Z"
+    }
+  ],
+  "certificates": [],
+  "projects": [
+    {
+      "id": "proj-1",
+      "userId": "student-demo-001",
+      "title": "EduPilot AI - Autonomous Study Companion",
+      "description": "An AI-powered academic operating system for students with smart study planners, dynamic quizzes, and portfolio builder.",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js"
+      ],
+      "isStarred": true,
+      "createdAt": "2026-09-28T08:06:24.236Z",
+      "updatedAt": "2026-09-28T08:06:24.236Z"
+    }
+  ],
+  "achievements": [],
+  "resumes": [],
+  "cvs": [],
+  "studentCvs": [],
+  "studentPortfolios": [],
+  "interviews": []
+}

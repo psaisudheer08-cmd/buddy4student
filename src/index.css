@@ -1,0 +1,219 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Dark mode theme surface styling */
+html.dark body,
+body.dark {
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+/* Surface backgrounds in dark mode */
+.dark .bg-white {
+  background-color: #0f172a;
+}
+
+.dark .bg-slate-50 {
+  background-color: #090d16;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1e293b;
+}
+
+.dark .hover\:bg-slate-50:hover {
+  background-color: #1e293b;
+}
+
+.dark .hover\:bg-slate-100:hover {
+  background-color: #1e293b;
+}
+
+.dark .border-slate-200,
+.dark .border-slate-100,
+.dark .border-slate-200\/80 {
+  border-color: #1e293b;
+}
+
+.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+.dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1e293b;
+}
+
+/* Typography contrast in dark mode */
+.dark .text-slate-900 {
+  color: #f8fafc;
+}
+
+.dark .text-slate-800 {
+  color: #f1f5f9;
+}
+
+.dark .text-slate-700 {
+  color: #e2e8f0;
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8;
+}
+
+.dark .text-slate-400 {
+  color: #64748b;
+}
+
+/* Preserve bright crisp white text on primary buttons */
+.text-white,
+.dark .text-white {
+  color: #ffffff !important;
+}
+
+/* Soft accent tinted surfaces in dark mode for eye comfort */
+.dark .bg-blue-50 {
+  background-color: rgba(30, 58, 138, 0.25);
+}
+
+.dark .bg-indigo-50 {
+  background-color: rgba(49, 46, 129, 0.25);
+}
+
+.dark .bg-emerald-50 {
+  background-color: rgba(6, 78, 59, 0.25);
+}
+
+.dark .bg-amber-50 {
+  background-color: rgba(120, 53, 15, 0.25);
+}
+
+.dark .bg-purple-50,
+.dark .bg-violet-50 {
+  background-color: rgba(91, 33, 182, 0.25);
+}
+
+.dark .bg-rose-50,
+.dark .bg-red-50 {
+  background-color: rgba(136, 19, 55, 0.25);
+}
+
+.dark .bg-teal-50 {
+  background-color: rgba(19, 78, 74, 0.25);
+}
+
+/* Accent text legibility in dark mode */
+.dark .text-blue-700,
+.dark .text-blue-800,
+.dark .text-blue-900 {
+  color: #93c5fd;
+}
+
+.dark .text-indigo-700,
+.dark .text-indigo-800,
+.dark .text-indigo-900 {
+  color: #a5b4fc;
+}
+
+.dark .text-emerald-700,
+.dark .text-emerald-800 {
+  color: #6ee7b7;
+}
+
+.dark .text-amber-700,
+.dark .text-amber-800 {
+  color: #fcd34d;
+}
+
+.dark .text-purple-700,
+.dark .text-violet-700 {
+  color: #d8b4fe;
+}
+
+.dark .text-red-700,
+.dark .text-rose-700 {
+  color: #fca5a5;
+}
+
+.dark .text-teal-700,
+.dark .text-teal-800 {
+  color: #5eead4;
+}
+
+/* Form input elements in dark mode */
+.dark input:not([type="checkbox"]):not([type="radio"]),
+.dark textarea,
+.dark select {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.dark input:not([type="checkbox"]):not([type="radio"])::placeholder,
+.dark textarea::placeholder {
+  color: #64748b;
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: #3b82f6;
+  background-color: #1e293b;
+}
+
+@media print {
+  /* Hide all dashboard chrome: navbar, sidebar, buttons, forms, footers */
+  header,
+  aside,
+  nav,
+  button,
+  input,
+  textarea,
+  select,
+  .print\:hidden,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Make sure printable content expands to page width */
+  .cv-document-print {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+  }
+
+  /* Target page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  @page {
+    size: letter portrait;
+    margin: 0.6in 0.6in;
+  }
+}
